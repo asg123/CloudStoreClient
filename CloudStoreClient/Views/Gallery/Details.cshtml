@@ -1,0 +1,50 @@
+﻿@model ServMan.ApiV1.Models.Gallery
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Gallery</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Image)
+    </div>
+    <div class="display-field">
+        <img src='@TempData["imgbase"]@Model.Image'/>
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CurrencySymbol)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CurrencySymbol)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsOrganizationOffer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsOrganizationOffer)
+    </div>
+
+</fieldset>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

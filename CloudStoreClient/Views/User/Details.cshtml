@@ -1,0 +1,163 @@
+﻿@model ServMan.ApiV1.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+@Html.ActionLink("Home", "Index", "Home")
+
+<fieldset>
+    <legend>User</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DistinguishedName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DistinguishedName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LastName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Login)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Login)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TimeZoneInfoId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TimeZoneInfoId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Culture)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Culture)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DefaultCulture)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DefaultCulture)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CountryId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CountryId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Enabled)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Enabled)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Locked)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Locked)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HasQueryEngineInfo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HasQueryEngineInfo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HasCloudFactoryStoreInfo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HasCloudFactoryStoreInfo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsAdmin)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsAdmin)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProvisioningStatus)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProvisioningStatus)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HasActiveWF)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HasActiveWF)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Password)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Password)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OrganizationId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OrganizationId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DefaultCurrencyId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DefaultCurrencyId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RegionId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RegionId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProfileId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProfileId)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
