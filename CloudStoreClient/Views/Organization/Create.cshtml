@@ -1,0 +1,145 @@
+﻿@model ServMan.ApiV1.Models.Organization
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+<h3>@TempData["error"]</h3>
+@Html.ActionLink("Home", "Index", "Home")
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Organization</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ParentId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ParentId)
+            @Html.ValidationMessageFor(model => model.ParentId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OrganizationalUnitName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OrganizationalUnitName)
+            @Html.ValidationMessageFor(model => model.OrganizationalUnitName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CountryId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CountryId)
+            @Html.ValidationMessageFor(model => model.CountryId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RegionId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RegionId)
+            @Html.ValidationMessageFor(model => model.RegionId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DefaultCurrencyId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DefaultCurrencyId)
+            @Html.ValidationMessageFor(model => model.DefaultCurrencyId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DefaultCulture)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DefaultCulture)
+            @Html.ValidationMessageFor(model => model.DefaultCulture)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CreditLimit)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CreditLimit)
+            @Html.ValidationMessageFor(model => model.CreditLimit)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CloudRobotOrganizationId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CloudRobotOrganizationId)
+            @Html.ValidationMessageFor(model => model.CloudRobotOrganizationId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CloudRobotTargetInstanceId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CloudRobotTargetInstanceId)
+            @Html.ValidationMessageFor(model => model.CloudRobotTargetInstanceId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DistinguishedName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DistinguishedName)
+            @Html.ValidationMessageFor(model => model.DistinguishedName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UsersPath)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UsersPath)
+            @Html.ValidationMessageFor(model => model.UsersPath)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ProviderId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ProviderId)
+            @Html.ValidationMessageFor(model => model.ProviderId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ParentOuObjectId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ParentOuObjectId)
+            @Html.ValidationMessageFor(model => model.ParentOuObjectId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ObjectId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ObjectId)
+            @Html.ValidationMessageFor(model => model.ObjectId)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

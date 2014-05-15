@@ -1,0 +1,120 @@
+﻿@model ServMan.ApiV1.Models.Organization
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+@Html.ActionLink("Home", "Index", "Home")
+<fieldset>
+    <legend>Organization</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ParentId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ParentId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OrganizationalUnitName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OrganizationalUnitName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CountryId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CountryId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RegionId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RegionId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DefaultCurrencyId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DefaultCurrencyId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DefaultCulture)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DefaultCulture)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreditLimit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreditLimit)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CloudRobotOrganizationId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CloudRobotOrganizationId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CloudRobotTargetInstanceId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CloudRobotTargetInstanceId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DistinguishedName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DistinguishedName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UsersPath)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UsersPath)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProviderId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProviderId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ParentOuObjectId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ParentOuObjectId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ObjectId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ObjectId)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
