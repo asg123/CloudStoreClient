@@ -40,11 +40,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="ServMan.ApiV1">
-      <HintPath>..\ServMan.ApiV1.dll</HintPath>
+    <Reference Include="ServMan.ApiV1, Version=8.1.28.29537, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CloudStore.ApiV1.8.1.28.29537\lib\net45\ServMan.ApiV1.dll</HintPath>
     </Reference>
-    <Reference Include="ServMan.Messages">
-      <HintPath>..\ServMan.Messages.dll</HintPath>
+    <Reference Include="ServMan.Messages, Version=8.1.28.29535, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CloudStore.Messages.8.1.28.29535\lib\net45\ServMan.Messages.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
