@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudStoreClient", "CloudStoreClient\CloudStoreClient.csproj", "{65C32D03-A3F7-4A09-A494-DBE67CA43647}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{42FBADFA-A66D-4E0F-A70D-31895DF9AEDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{65C32D03-A3F7-4A09-A494-DBE67CA43647}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65C32D03-A3F7-4A09-A494-DBE67CA43647}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65C32D03-A3F7-4A09-A494-DBE67CA43647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42FBADFA-A66D-4E0F-A70D-31895DF9AEDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42FBADFA-A66D-4E0F-A70D-31895DF9AEDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42FBADFA-A66D-4E0F-A70D-31895DF9AEDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42FBADFA-A66D-4E0F-A70D-31895DF9AEDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
